@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MateriPecahanActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#008C8C">
+
+            <ImageView
+                android:id="@+id/lefticon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginVertical="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="btnKembali"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/toolbartitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="Perkalian dan Pembagian Pecahan"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="190dp"
+                    android:padding="8dp"
+                    android:text="Perkalian Pecahan"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="298dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="90dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Kita sering mendengar kata-kata pecahan, pembilang, penyebut, sekian per sekian, dan masih banyak lagi.."
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="pecahan merupakan istilah dalam matematika yang terdiri dari pembilang dan penyebut. Pembilang merupakan bilangan yang dibagi, sedangkan penyebut merupakan bilangan yang menjadi pembagi. "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:text="Rumus Perkalian Pecahan"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="151dp"
+                    android:layout_marginHorizontal="105dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rumus1" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="320dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="90dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contoh"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="1000dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:text="1/2 akan lebih disukai dari pada 500/1000, tetapi 50/100 atau 500/1000 akan lebih disukai dari pada pecahan seperti 387/774. Seharusnya semua bilangan tersebut memiliki nilai yang
+                        sama, yaitu 1/2. Oleh karena itu, biasanya akan dilakukan penyederhanaan bilangan pecahan agar mempermudah pembacaannya."
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:text="Cara Untuk Menghitung Perkalian"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="151dp"
+                    android:layout_marginHorizontal="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi1" />
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="151dp"
+                    android:layout_marginHorizontal="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:text="Jenis-Jenis Perkalian Bilangan Pecahan"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Dibawah ini kita akan dibahas 3 jenis perkalian bilangan pecahan terdiri dari perkalian bilangan pecahan biasa, perkalian bilangan pecahan biasa dengan bilangan bulat, dan  campuran antara bilangan bulat atau bilangan biasa. "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:text="1. Perkalian Bilangan Pecahan Biasa"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Mengalikan bilangan pecahan biasa kita bisa dilakukan dengan cara mengalikan antara pembilang dengan pembilang dan mengalikan penyebut dengan penyebut. "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/matteri3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Perkalian bilangan pecahan biasa dengan bilangan bulat"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Cara mengalikan pecahan biasa dengan bilangan bulat adalah dengan mengalikan pembilang dengan bilang bulat lalu dibagi dengan penyebut "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi4" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="70dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:text=" contoh : "
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="260dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="70dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Doni ingin membuat sebuah kemeja sehingga membutuhkan ½ meter bahan kain. Jika Doni ingin membuat 3 kemeja maka berapa meter kah bahan kain yang harus Doni perlukan ? "
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Penyelesaian : "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contoh soal cerita perkalian pecahan diatas dapat diselesaiakan dengan cara berikut ini :"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="80dp"
+                        android:justificationMode="inter_word"
+                        android:text="½ x 3 = 3/2 = 1 ½ meter(m) "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:text="3. Perkalian Bilangan Pecahan Campuran"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Menghitung perkalian bilangan pecahan campuran sama persis dengan cara menghitung perkalian bilangan pecahan biasa. tetapi sebelum mengalikan kedua bilangan, kita harus mengubah bilangan pecahan campuran menjadi bilangan pecahan biasa."
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:text=" Pembagian pecahan biasa"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Untuk membagi pecahan biasa cara nya cukup lah mudah dengan membagi pecahan biasa kalian cukup dengan hanya langkah seperti penguraian rumus pada perkalian pecahan, yakni dengan membagi di balik setelah itu melakukan sistem kali."
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi6" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Penjelasan : "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:text="Pertama yang harus kalian lakukan yakni kali bilangan pecahan pembagi, setelah pecahan pembagi sudah kalian balik maka operasi bagi akan berubah menjadi operasi kali sampai bentuknya jadi seperti dibawah ini :"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi7" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Setelah oprasi pembagi berubah menjadi operasi kali setelah itu selanjutnya kalian dapat operasikan pembilang yang d kali dengan pebilang, maka penyebut akan dikali penyebut.
+
+Dari itu nanti akan di dapatkan lah nilai 14/7 dengan begini hasil dari pembagian yang ada di atas masih dapat kalian sederhanakan lagi menjadi 14/7 = 2 .."
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi8" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Konsep dari penyederhanaan pecahan yakni dengan menggunakan sistem membagi pecahan pada pembilang dan juga penyebut dengan menggunakan bilangan yang sama yakni 14 : 7 =2 setelah itu penyebut 7 : 7 =1 hingga kalian jadikan sederhana seperti 2/1 dalam pecahan ini biasanya angka per satu tidak perlu kalian tulisakan, Sehingga didapatkanlah 2"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi9" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Penjelasannya "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:text="Sama halnya seperti contoh yang sebelumnya yakni pembagi dari 4/5 di balik menjadi 5/4.
+Setelah itu berlakukan operasi perkalian, pembilang 2 x5, dengan penyebut dikali kan penyebut 7 x 4 maka akan mendapatkan nilai 10/28 , Karena nilai dari 10/28 masih dapat untuk di sederhanakan maka yang harus dilakukan bagi pembilang dan juga penyebut dengan pembilangan yang sama yaitu di bagi dengan 2 sehingga akan di dapat kan 5/14 "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:text=" Pembagian pecahan campuran"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Pecahan campuran merupakan pecahan yang terdiri dengan sistem bilangan bulat dan juga bilangan pecahan, misalnya sebagai berikut :"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi10" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Kunci mudah dari membagi pecahan campuran yaitu pecahan campuran dapat kalian ubah terlebih dahulu untuk dijadikan pecahan biasa."
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi11" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Langkah pertama yang perlu kalian lakukan yaitu mengubah oprasi pecahan dalam campuran hingga menjadi pecahan biasa yakni dengan menggunakan cara terlebih dahulu mengalikan penyebut dengan dikalika bilangan bulat setelah itu di tambah pembilang, maka hasilnya dapat di letakkan untuk dijadikan sebagai pembilang dan penyebutnya yang tetap."
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="280dp"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:text=" Pembagian pecahan Desimal"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Pembagian pecahan desimal ini yaitu pecahan yang memiliki peyebut, mulai dari 10 – 10000 dan seterusnya. Penyebut dapat di idetifikasi menggunakan jumlah angka pada belakang koma, 1 bilangan apabila di belakang koma maka penyebutnya 10, namun jika terdapat 2 bilangan dengan di belakang maka akan jadi penyebutnya 100, jika ada 3 maka penyebutnya akan menjadi 1000 dan seterusnya."
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="220dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi13" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="Jika kaliansudah mendapatkan jawaban pecahan biasa yakni 33/50 dan juga 1/50 maka setelah itu dikarenakan kedua penyebut itu sama-sama mengandung 2 angka pada belakang koma maka penyebutnya menjadi 100.
+
+Setelah itu operasikan penyebut tadi menjadi seperti pembagian pada pecahan biasa, contohnya seperti yang ada dibawah ini :
+
+"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="220dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/materi14" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

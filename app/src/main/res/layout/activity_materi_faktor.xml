@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MateriFaktorActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#008C8C">
+
+            <ImageView
+                android:id="@+id/lefticon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginVertical="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="btnKembali"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/toolbartitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="Faktor Kelipatan"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <VideoView
+                    android:id="@+id/mVideoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.55"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/play1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFD676"
+                    android:text="Play"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.006"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.737" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Kelipatan Bilangan"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Kelipatan dari suatu bilangan adalah hasil perkalian bilangan tersebut dengan bilangan asli."
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="268dp"
+                    android:layout_height="209dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="15dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contoh"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:text="Tentukan kelipatan dari 4!"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="50dp"
+                        android:justificationMode="inter_word"
+                        android:text="Penyelesaian :"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/penyelesaian"
+                        android:layout_width="243dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="70dp"
+                        android:justificationMode="inter_word"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Faktor Bilangan"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Kelipatan dari suatu bilangan adalah hasil perkalian bilangan tersebut dengan bilangan asli."
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:src="@drawable/card1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="100dp"
+                    android:src="@drawable/gr2"/>
+
+                <TextView
+                    android:layout_width="243dp"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="5dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:id="@+id/textfak"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Bilangan Prima"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Faktor prima adalah faktor-faktor dari suatu bilangan yang merupakan bilangan prima."
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="265dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="15dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contoh"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/prima"
+                        android:layout_width="243dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Faktorisasi Prima"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Faktorisasi prima adalah cara menyatakan suatu bilangan dalam bentuk
+perkalian bilangan- bilangan prima. Faktorisasi prima dari suatu bilangan dapat
+ditentukan menggunakan pohon faktor."
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="265dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="15dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contoh"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:textColor="#000000"
+                        android:text="Tentukan faktorisasi prima dari 24!"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/faktor"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Kelipatan Persekutuan"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Kelipatan persekutuan adalah kelipatan yang sama (bersekutu) dari dua
+bilangan atau lebih. Kelipatan persekutuan dapat ditentukan dengan cara
+menuliskan kelipatan setiap bilangan, lalu melingkari kelipatan bilangan yang sama (bersekutu)."
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="265dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="15dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contoh"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:textColor="#000000"
+                        android:text="Tentukan kelipatan persekutuan dari 4 dan 6 "
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="100dp"
+                    android:src="@drawable/faktor2"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Faktor Persekutuan"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Faktor persekutuan adalah faktor yang sama (bersekutu) dari dua bilangan atau lebih."
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="267dp"
+                    android:layout_height="91dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="15dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contoh"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="40dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:textColor="#000000"
+                        android:text="Tentukan faktor persekutuan dari 18 dan 24"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:src="@drawable/faktor3"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="KPK dan FPB Dua Bilangan"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="8dp"
+                    android:text="Kelipatan persekutuan terkecil (KPK) adalah kelipatan persekutuan dari dua
+bilangan yang nilainya paling kecil di antara kelipatan persekutuan lainnya.
+Faktor persekutuan terbesar adalah faktor persekutuan dari dua bilangan yang
+nilainya paling besar di antara faktor persekutuan lainnya."
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="267dp"
+                    android:layout_height="91dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="15dp"
+                        android:justificationMode="inter_word"
+                        android:text="Contoh"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:textColor="#000000"
+                        android:text="Tentukan KPK dan FPB dari 30 dan 42"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="267dp"
+                    android:layout_height="345dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#FFD676"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.089">
+
+                    <TextView
+                        android:layout_width="246dp"
+                        android:layout_height="345dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="15dp"
+                        android:justificationMode="inter_word"
+                        android:text="Penyelesaian :"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:layout_width="243dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="30dp"
+                        android:justificationMode="inter_word"
+                        android:textColor="#000000"
+                        android:text="Tentukan KPK dan FPB dari 30 dan 42"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bulat1"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="60dp"/>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bulat2"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="60dp"/>
+
+                    <TextView
+                        android:id="@+id/akhir"
+                        android:layout_width="243dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="200dp"
+                        android:justificationMode="inter_word"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kumat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kumat">
+        <activity
+            android:name=".MateriPanjangBeratActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MateriFaktorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MateriAkarPangkatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MateriPerpangkatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MateriBangunRuangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriBangunDatarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriOperasiHitungActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriPecahanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriPenguranganActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriPenjumlahanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriPembagianActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriPerkalianActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriKoordinatKartesiusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriPenyajianDataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriPengolahanDataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriKelas6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriKelas5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriKelas4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriKelas3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriKelas2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriKelas1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuMateriActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
