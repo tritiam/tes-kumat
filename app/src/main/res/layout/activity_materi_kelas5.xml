@@ -193,7 +193,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="95dp"
                         android:layout_marginTop="27dp"
-                        android:text="Pengurangan"
+                        android:text="Bangun Ruang"
                         android:textColor="#ffffff"
                         android:textSize="19sp"
                         android:textStyle="bold" />

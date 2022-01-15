@@ -10,17 +10,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kumat">
         <activity
-            android:name=".MateriPanjangBeratActivity"
+            android:name=".KuisKelas3Activity"
             android:exported="false" />
+        <activity
+            android:name=".KuisKelas2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisKelas4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisKelas6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisKelas5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SkorKuisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisKelas1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuKuisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MateriPanjangBeratActivity"
+            android:exported="true" />
         <activity
             android:name=".MateriFaktorActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MateriAkarPangkatActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MateriPerpangkatanActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MateriBangunRuangActivity"
             android:exported="true" />

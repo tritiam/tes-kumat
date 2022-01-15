@@ -27,7 +27,7 @@ public class MenuActivity extends AppCompatActivity {
         btnKuis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MenuActivity.this, MenuMateriActivity.class));
+                startActivity(new Intent(MenuActivity.this, MenuKuisActivity.class));
             }
         });
     }

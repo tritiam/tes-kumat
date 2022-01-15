@@ -87,7 +87,8 @@ public class MateriKoordinatKartesiusActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Variable Uri untuk menentukan lokasi Resource Video yang akan ditampilkan
-                Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.penyajian_data);
+                // Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.penyajian_data);
+                Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/kumat-93eda.appspot.com/o/raw%2Fkoordinat_kartesius.m4v?alt=media&token=21c6a776-1efa-43ce-bc30-a6074879dd0c");
 
                 mVideoView.setVideoURI(uri);
 

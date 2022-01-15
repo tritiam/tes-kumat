@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1013285206029",
+    "firebase_url": "https://kumat-93eda-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kumat-93eda",
+    "storage_bucket": "kumat-93eda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013285206029:android:96539bd95ccdbc2700bd44",
+        "android_client_info": {
+          "package_name": "com.example.kumat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013285206029-va6dbjnn7k3ivda6oure7h4t0rg02khr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOL1UkOM-5sXdcT5sqTZ1BtxvqO-fHnQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013285206029-va6dbjnn7k3ivda6oure7h4t0rg02khr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

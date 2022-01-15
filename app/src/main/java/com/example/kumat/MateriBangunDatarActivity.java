@@ -64,7 +64,7 @@ public class MateriBangunDatarActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Variable Uri untuk menentukan lokasi Resource Video yang akan ditampilkan
-                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.penyajian_data);
+                Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/kumat-93eda.appspot.com/o/raw%2Fbangun_datar.m4v?alt=media&token=d93ada52-5f31-4171-8f13-e9356d586577");
 
                 mVideoView3.setVideoURI(uri);
 

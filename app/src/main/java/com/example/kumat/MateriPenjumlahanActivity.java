@@ -71,7 +71,7 @@ public class MateriPenjumlahanActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Variable Uri untuk menentukan lokasi Resource Video yang akan ditampilkan
-                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.penyajian_data);
+                Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/kumat-93eda.appspot.com/o/raw%2Fnovi1.mp4?alt=media&token=77cd99f9-8116-4229-99fe-7427d1a69598");
 
                 mVideoView.setVideoURI(uri);
 
