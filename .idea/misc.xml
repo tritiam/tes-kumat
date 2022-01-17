@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/tes-kumat/app/src/main/res/layout/activity_materi_pembagian.xml" value="0.25" />
+        <entry key="..\:/tes-kumat/app/src/main/res/layout/activity_materi_perkalian.xml" value="0.15" />
         <entry key="..\:/teskumat/app/src/main/res/drawable-v24/a.xml" value="0.1" />
         <entry key="..\:/teskumat/app/src/main/res/drawable-v24/indicator_default.xml" value="0.1" />
         <entry key="..\:/teskumat/app/src/main/res/drawable/bg.xml" value="0.13333333333333333" />

@@ -175,7 +175,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="24:6=24 -> 4x6=24"
+                        android:text="24:6= 4 -> 4x6=24"
                         android:textColor="#000000"
                         android:textSize="14dp"
                         android:layout_marginTop="120dp"
